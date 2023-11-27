@@ -1,6 +1,6 @@
 {
   "author": "Thorsten Lorenz <thlorenz@gmx.de> (thlorenz.com)",
-  "name": "doctoc",
+  "name": "doctoc-mdx",
   "description": "Generates TOC for markdown files of local git repo.",
   "version": "2.2.0",
   "repository": {
