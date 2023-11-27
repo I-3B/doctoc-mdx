@@ -1,5 +1,8 @@
 # DocToc [![Node.js CI](https://github.com/thlorenz/doctoc/actions/workflows/node.js.yml/badge.svg)](https://github.com/thlorenz/doctoc/actions/workflows/node.js.yml)
 
+**NOTE: I just changed the comment style from `<!-- -->` to `{/* */}` so it can work with mdx**
+
+
 Generates table of contents for markdown files inside local git repository. Links are compatible with anchors generated
 by github or other sites via a command line flag.
 
@@ -49,11 +52,11 @@ by the markdown parser. Doctoc defaults to using the GitHub parser, but other
 specified](#using-doctoc-to-generate-links-compatible-with-other-sites).
 
 ### Ignoring individual files
-In order to ignore a specific file when running `doctoc` on an entire directory, just add `<!-- DOCTOC SKIP -->` to the top of the file you wish to ignore.
+In order to ignore a specific file when running `doctoc` on an entire directory, just add `{/* DOCTOC SKIP */}` to the top of the file you wish to ignore.
 
 ### Update existing doctoc TOCs effortlessly
 
-If you already have a TOC inserted by doctoc, it will automatically be updated by running the command (rather than inserting a duplicate toc). Doctoc locates the TOC by the `<!-- START doctoc -->` and `<!-- END doctoc -->` comments, so you can also move a generated TOC to any other portion of your document and it will be updated there.
+If you already have a TOC inserted by doctoc, it will automatically be updated by running the command (rather than inserting a duplicate toc). Doctoc locates the TOC by the `{/* START doctoc */}` and `{/* END doctoc */}` comments, so you can also move a generated TOC to any other portion of your document and it will be updated there.
 
 ### Adding toc to individual files
 
@@ -90,8 +93,8 @@ Available modes are:
 By default, doctoc places the toc at the top of the file. You can indicate to have it placed elsewhere with the following format:
 
 ```
-<!-- START doctoc -->
-<!-- END doctoc -->
+{/* START doctoc */}
+{/* END doctoc */}
 ```
 
 You place this code directly in your .md file. For example:
@@ -101,8 +104,8 @@ You place this code directly in your .md file. For example:
 Here we are, introducing the post. It's going to be great!
 But first: a TOC for easy reference.
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+{/* START doctoc */}
+{/* END doctoc */}
 
 # Section One
 
